@@ -10,6 +10,11 @@
 ## Domain
 
 <!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
+I chose the domain of rating of cse professors in sbu. this is valuable because students need to amke decisions on which clas to take with which professor and its very I chose the domain of SBU CSE professor ratings and reviews. This is useful because students are constantly trying to figure out which classes to take and which professors to take them with, especially in the CSE department where workload, teaching style, and grading can vary a lot from one professor to another. These choices can genuinely affect how manageable a semester feels, so having good information matters.
+
+Right now, this process is pretty scattered and annoying to do manually. You usually end up jumping between RateMyProfessor, Reddit threads, Discord chats, and random student reviews just to get a basic idea of what a professor is like. Even then, the information is often incomplete, outdated, or super subjective, so it takes a lot of effort to piece together something reliable.
+
+Using this project, instead of spending a long time digging through different sources, you can have a system where you can just look up a professor and immediately get a clear summary of student experiences, common themes, and overall sentiment.
 
 ---
 
@@ -20,16 +25,16 @@
 
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | Abid Malik | RMP reviews for CSE220 (Systems Fundamentals) and CSE337 (Scripting Languages) | https://www.ratemyprofessors.com/professor/2968856 — `docs/abid_malik.txt` |
+| 2 | Ahmad Esmaili | RMP reviews for CSE214 (Data Structures) and CSE114 (Intro to OOP) | https://www.ratemyprofessors.com/professor/86020 — `docs/ahmed_esmaili.txt` |
+| 3 | Christopher Kane | RMP reviews for CSE215 (Logic), CSE216/316 (Functional/Full Stack), CSE310 (Networks) | https://www.ratemyprofessors.com/professor/2515527 — `docs/christopher_kane.txt` |
+| 4 | Eugene Stark | RMP reviews for CSE320 (Systems Fundamentals) and CSE306 (Operating Systems) | https://www.ratemyprofessors.com/professor/926577 — `docs/eugene_stark.txt` |
+| 5 | Jalaa Hoblos | RMP reviews for CSE101, CSE114 (Intro to OOP), CSE310 (Networks) | https://www.ratemyprofessors.com/professor/2826272 — `docs/jalaa_hoblos.txt` |
+| 6 | Michael Ferdman | RMP reviews for CSE356 (Cloud Computing), CSE506 (OS), CSE502 (Computer Architecture) | https://www.ratemyprofessors.com/professor/1825086 — `docs/michael_ferdman.txt` |
+| 7 | Paul Fodor | RMP reviews for CSE114 (Intro to OOP), CSE215 (Logic), CSE316 (Full Stack) | https://www.ratemyprofessors.com/professor/1614881 — `docs/paul_fodor.txt` |
+| 8 | Pramod Ganapathi | RMP reviews for CSE215 (Discrete Math) and CSE113 | https://www.ratemyprofessors.com/professor/2519551 — `docs/pramod_ganapathi.txt` |
+| 9 | Steven Skiena | RMP reviews for CSE373 (Analysis of Algorithms) and CSE519 (Data Science) | https://www.ratemyprofessors.com/professor/394782 — `docs/steven_skiena.txt` |
+| 10 | Yifan Sun | RMP reviews for CSE353 (ML), CSE512 (ML Theory), CSE519 (Data Science) | https://www.ratemyprofessors.com/professor/2605339 — `docs/yifan_sun.txt` |
 
 ---
 
