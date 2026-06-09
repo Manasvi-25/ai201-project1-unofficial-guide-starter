@@ -259,9 +259,9 @@ also doesn't help since there's no course number in the query. The answer is in 
 the system just can't connect the terminology.
 
 **What you would change to fix it:** Add a simple alias map that converts common topic 
-names to course numbers before retrieval — something like "object oriented programming" 
-→ "CSE114". That way the keyword filter would kick in and find the right chunks.
----
+names to course numbers before retrieval — like "object oriented programming" → "CSE114" 
+or "data structures" → "CSE214". That way the keyword filter would kick in and pull the 
+right chunks even when the user doesn't know the course number.
 
 ## Spec Reflection
 
