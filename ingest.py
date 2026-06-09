@@ -37,11 +37,18 @@ def process_documents():
     for doc in documents:
         cleaned = clean_text(doc["text"])
         chunks = chunk_text(cleaned)
+        
+        # extract professor name from filename e.g. steven_skiena.txt -> Steven Skiena
+        name_part = doc["source"].replace(".txt", "")
+        professor_name = " ".join(word.capitalize() for word in name_part.split("_"))
+        
         for i, chunk in enumerate(chunks):
+            # prepend professor name to every chunk
+            tagged_chunk = f"Professor: {professor_name}\n{chunk}"
             all_chunks.append({
                 "source": doc["source"],
                 "chunk_index": i,
-                "text": chunk
+                "text": tagged_chunk
             })
 
     print(f"Total chunks: {len(all_chunks)}")
