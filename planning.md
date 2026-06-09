@@ -45,19 +45,19 @@ Using this project, instead of spending a long time digging through different so
      numbers fit the structure of your documents.
      A review-heavy corpus warrants different chunking than a long FAQ. -->
 
-**Chunk size:** 500
+**Chunk size:** split by blank line (one review per chunk)
 
-**Overlap:** 50
+**Overlap:** none needed
 
-**Reasoning:** I’m using chunk size = 500 and overlap = 50. Each review is usually 2–5 sentences (~200–400 chars), so 500 chars fits one full review plus its metadata like course, professor, difficulty, etc. 
-
-I didn’t go smaller because then you lose context, something like “exams are hard” without course/professor info becomes useless and just matches everything. I didn’t go bigger either because mixing multiple reviews in one chunk makes embeddings messy and less precise since different opinions get blended together.
-
-Overlap = 50 is just a small safety buffer since reviews are already separated cleanly, so we don’t really need a heavy overlap.
-
-Semantic search works well here because users don’t use the exact words from reviews. Like someone might say “brutal” but reviews say “very difficult” or “tons of workload” — embeddings still connect those.
-
-Top-k = 4 because each chunk is one review, so 4 reviews is enough to get a balanced mix of opinions without dumping too much noise on the model.
+**Reasoning:** I originally planned 500 char chunks with 50 char overlap, but after 
+running the pipeline I switched to splitting on blank lines instead. Each review in 
+my docs is already naturally separated by a blank line, so splitting by blank line 
+gives exactly one complete review per chunk. This is better than fixed character 
+splitting because reviews are self-contained units — a student's full opinion about 
+one professor in one course. The old approach was cutting reviews mid-sentence which 
+made chunks meaningless. Any chunk shorter than 50 chars is filtered out to remove 
+header lines. Final result: 238 chunks across 10 documents, each one a readable, 
+complete review.
 
 ---
 
@@ -175,6 +175,11 @@ all-MiniLM-L6-v2 is what I’m using for this since it runs locally, is fast, an
    - verify: run locally and test all 5 eval questions work
 
 **Milestone 3 — Ingestion and chunking:**
+Ran ingest.py on all 10 documents in documents/sources/.
+Output:
+Loaded 10 documents
+Total chunks: 238
+Sample chunks verified, each chunk is one complete student review with professor name, course number, date, and opinion. No fragments, no HTML artifacts, no empty strings. Switched from fixed 500-char chunking to blank-line splitting since reviews are naturally separated, this gave cleaner, self-contained chunks.
 
 **Milestone 4 — Embedding and retrieval:**
 
