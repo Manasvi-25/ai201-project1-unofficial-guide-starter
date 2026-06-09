@@ -1,0 +1,103 @@
+SOURCE: https://www.ratemyprofessors.com/professor/86020
+
+Professor: Ahmad Esmaili
+Department: Computer Science, Stony Brook University
+Overall Quality: 3.5/5 | Difficulty: 3.0/5 | Would Take Again: 62%
+
+---
+
+Quality: 3.0 | Difficulty: 4.0 | Course: CSE114 | Date: May 3, 2026 | Grade: C-
+He is a good professor. Make sure to attend all classes since there are pop quizzes worth about 6% of the grade. The exams can feel harder than expected, but there is a significant curve at the end.
+
+Quality: 3.0 | Difficulty: 4.0 | Course: CSE214 | Date: Sep 5, 2025 | Grade: C
+He's not great but he's not bad. I personally just didn't find the lectures to be very engaging and felt I learned more out of class than in class. Overall the class is pretty fair. Just get ready to work hard for a good grade.
+
+Quality: 4.0 | Difficulty: 3.0 | Course: CSE214 | Date: Aug 26, 2025 | Grade: B+
+Professor is fair, exams are super hard so the curve will save you. He is very understanding and responsive. Very stern about his policies but a good lecturer overall. Be aware of random pop quizzes.
+
+Quality: 5.0 | Difficulty: 3.0 | Course: CSE214 | Date: Aug 20, 2025 | Grade: A
+All of his exams are really fair. He gives hints during lecture about what's going to be on the test, so definitely pay attention. He's extremely understanding and nice — if you put your best foot forward he will do the same.
+
+Quality: 1.0 | Difficulty: 5.0 | Course: CSE214 | Date: Aug 4, 2025 | Grade: Drop/Withdrawal
+Do not take this class over the summer. The amount of time given to fully digest these topics is not enough. Along with very tedious lectures and unhelpful, rude TAs, it is a waste of time and money.
+
+Quality: 5.0 | Difficulty: 3.0 | Course: CSE214 | Date: Aug 30, 2023 | Grade: A+
+Fair. This is the word that best describes professor Esmaili. I took him twice. First semester in person he gave tough exams — I felt really demoralized after that final (D- uncurved, B- curved). Second semester online over summer I tried much harder and aced every homework (B uncurved, A+ curved).
+
+Quality: 2.0 | Difficulty: 4.0 | Course: CSE214 | Date: Aug 29, 2023 | Grade: A-
+Very strict and the course is designed to fail people out of the program. HW are basically mini-projects and the tests are filled with weird counting questions. For a low level CS class, this was disappointing and excessive.
+
+Quality: 3.0 | Difficulty: 3.0 | Course: CSE114 | Date: Aug 22, 2023 | Grade: A
+His grading and exams are mostly fair, his lectures aren't the most captivating but he does a decent job explaining the concepts. Generally has a pretty good email response rate. Be careful to show that you are not cheating because he is very cautious about that.
+
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE214 | Date: Aug 20, 2023 | Grade: A-
+Overall great professor if you want to learn about data structures. HWs are pretty long and difficult but teach you how to implement data structures. Make sure you start the HW as soon as it is posted and review recitation questions before exams and you are guaranteed an A.
+
+Quality: 1.0 | Difficulty: 5.0 | Course: CSE214 | Date: Aug 20, 2023 | Grade: C
+The homework was extra difficult and didn't use the data structures taught, and then the exam followed time complexity stuff the homework never really focused on. All in all, the components of the class didn't meld well enough.
+
+Quality: 5.0 | Difficulty: 3.0 | Course: CSE214 | Date: Aug 18, 2023 | Grade: A
+He is the most outstanding professor you could have for CSE214. GOAT.
+
+Quality: 3.0 | Difficulty: 4.0 | Course: CSE214 | Date: May 17, 2023 | Grade: A
+Pretty good and knowledgeable professor. Grades quickly. Homeworks were long but do improve your skills as a programmer. He doesn't post notes and gives pop quizzes. If you miss a lecture, there's little to no way to find out what you missed.
+
+Quality: 4.0 | Difficulty: 3.0 | Course: CSE214 | Date: Dec 6, 2021
+Esmaili is a good lecturer and I learned a ton in his class. However, his course slides show little information and can be vague. There were also lots of homework assignments but I found them pretty fun.
+
+Quality: 3.0 | Difficulty: 4.0 | Course: CSE214 | Date: Jun 29, 2021 | Grade: C
+Professor Esmaili was definitely a tough professor for CSE214, although you do learn a lot. It's important to attend lectures, otherwise you'll find it extremely difficult to do the homework assignments, which are basically projects given every other week. The midterm and final are worth a lot so study hard!
+
+Quality: 4.0 | Difficulty: 4.0 | Course: CSE214 | Date: May 19, 2021 | Grade: B
+Esmaili is pretty good at the material for data structures and algorithms, but you definitely have to work in order to do well. The class is ranked, which means there will always be a bottom percentage that fails, but he's still good with his teaching.
+
+Quality: 1.0 | Difficulty: 3.0 | Course: CSE214 | Date: Sep 1, 2020
+Besides no support during course, he is not even a good enough ISE program director. Complicates things for students for no reason. Very mean.
+
+Quality: 5.0 | Difficulty: 3.0 | Course: CSE214 | Date: Aug 18, 2020 | Grade: A
+One of the best professors I have had so far at Stony. Very approachable through email, typically replied within a few minutes and was always keen on making sure the student understands. He always says don't go after the grade, try to understand the material — and I definitely agree!
+
+Quality: 1.0 | Difficulty: 4.0 | Course: CSE311 | Date: May 22, 2020
+Worst professor I've ever had at Stony. Every semester there is a scandal of him accusing innocent students of cheating when it was his own fault for poorly organizing the exam links. Barely replies to emails or Piazza.
+
+Quality: 1.0 | Difficulty: 4.0 | Course: CSE311 | Date: May 7, 2020 | Grade: Not sure yet
+Do not take Esmaili if it isn't for CSE214. In my experience with his 311 and 215 courses, he's the worst prof I've had at Stony. Unempathetic, clearly doesn't care about the material or students. Any learning I did in this course I did myself.
+
+Quality: 5.0 | Difficulty: 2.0 | Course: CSE214 | Date: Dec 22, 2019 | Grade: A
+Great professor. Tests are fairly easy because of the curve, but show up in class for pop quizzes. He seems to follow a pattern with when he gives them but shakes things up randomly.
+
+Quality: 4.0 | Difficulty: 4.0 | Course: CSE214 | Date: Dec 28, 2018 | Grade: A-
+He is a good professor but be prepared to put in time for HWs due every two weeks — start early. His tests are pretty similar to the practice tests he provides so make sure you learn how to do every question in them.
+
+Quality: 4.0 | Difficulty: 2.0 | Course: CSE214 | Date: Dec 22, 2018 | Grade: A
+Good and funny professor overall. If you have a CS background before college then it's an easy A. This class is the final trial to see if you can continue this major.
+
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE214 | Date: Dec 5, 2018 | Grade: Not sure yet
+The best teacher you can have for 214. The class can be challenging but the material is fundamental to the rest of CS. He offers extra credit that will bump up your grade one letter. He's really nice and takes questions during class.
+
+Quality: 4.0 | Difficulty: 4.0 | Course: CSE214 | Date: May 16, 2018 | Grade: B
+The class had 7 homeworks due every other week. Even if you do great on the first and second midterm but do badly on the final, you can still get a good enough grade. He explains the material very well.
+
+Quality: 4.0 | Difficulty: 4.0 | Course: CSE214 | Date: May 11, 2018 | Grade: A
+This class is a bit intimidating but Esmaili genuinely cares for his students and wants to see people succeed. While his tests are difficult, he doesn't really throw any curve balls.
+
+Quality: 3.0 | Difficulty: 4.0 | Course: CSE215 | Date: Apr 26, 2018
+He's very knowledgeable in his field but not that great at explaining things sometimes. He goes fast and his tests can be very difficult. He is accessible in office hours and will do his best to answer questions in class.
+
+Quality: 1.0 | Difficulty: 3.0 | Course: CSE214 | Date: Jun 12, 2017 | Grade: B
+The material from the lecture and textbook do not correspond with each other, so you need to show up to class to learn the material. Wish the lecture slides were more clear so we don't need to fill in those missing gaps.
+
+Quality: 5.0 | Difficulty: 3.0 | Course: CSE214 | Date: May 29, 2017 | Grade: B+
+Exams are fair and he mostly tests you on the theory behind each data structure. Pop quizzes are pretty easy and are mostly there to check attendance. Do all of the homework assignments — you will learn a lot from them.
+
+Quality: 4.0 | Difficulty: 3.0 | Course: CSE214 | Date: May 6, 2017
+Lectures are decent. Tests are more about theory than application so you won't have to hand-write code much. Homeworks are long but overall not that hard. Start them early and try to do the extra credit portions.
+
+Quality: 5.0 | Difficulty: 3.0 | Course: CSE214 | Date: Dec 23, 2016 | Grade: A
+Great professor. His lectures are clear and he is very responsive to emails. There was a total of 7 HWs and doing them helps in understanding the material. He also gives you a rank so you can know your grade at that point in the semester.
+
+Quality: 2.0 | Difficulty: 3.0 | Course: CSE114 | Date: Jul 19, 2016
+I was faced with a lot of very picky grading that didn't make any sense. He also falsely accused me of academic dishonesty, and even though he admitted I didn't do anything wrong, still gave me a 0 for the assignment. Others have similar stories.
+
+Quality: 2.5 | Difficulty: 4.0 | Course: CSE214 | Date: Feb 22, 2016 | Grade: D
+This professor was very unhelpful in my situation. The HW is crucial — I cannot stress that enough. However, they can be very difficult. I received decent exam scores but got a D because my HW average was a 58.

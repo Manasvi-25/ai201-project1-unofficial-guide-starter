@@ -1,0 +1,85 @@
+SOURCE: https://www.ratemyprofessors.com/professor/1825086
+
+Professor: Michael Ferdman
+Department: Computer Science, Stony Brook University
+Overall Quality: 4.8/5 | Difficulty: 3.4/5 | Would Take Again: 100%
+
+---
+
+Quality: 5.0 | Difficulty: 3.0 | Course: CSE506 | Date: Apr 22, 2026 | Grade: Not sure yet
+He is a good professor who tries to explain everything clearly. If you don't understand something, you can go to Piazza and ask questions.
+
+Quality: 5.0 | Difficulty: 3.0 | Course: CSE502 | Date: May 15, 2025
+He is a very considerate person. Fantastic lectures for such a hard topic. Group projects. Very funny.
+
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE356 | Date: Nov 25, 2022
+Professor Ferdman is probably one of the best CS professors at the school. What you learn from this class, you will not learn anywhere else in the CS program. CSE320 makes you a better programmer, CSE356 makes you a better developer and systems designer.
+
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE356 | Date: Dec 30, 2019 | Grade: A
+The greatest class and professor I've ever taken. If you want to be a software developer then this is the most relevant course you can take at SBU. I got a software development internship for the summer because of the knowledge I gained from this course.
+
+Quality: 5.0 | Difficulty: 5.0 | Course: CSE356 | Date: Dec 19, 2019 | Grade: B
+No one chats during his lectures because they are so interesting. Prepare to have 3 dues in 7 days. Try not to take other CSE courses that have final projects at the same time. After all, he is the best professor ever.
+
+Quality: 5.0 | Difficulty: 5.0 | Course: CSE356 | Date: May 21, 2019 | Grade: C
+The material is so relevant to the industry and very up-to-date. The course focuses mainly on creating a project based on the technologies discussed in class. I may have gotten a poor grade, but I will never regret having taken it.
+
+Quality: 5.0 | Difficulty: 5.0 | Course: CSE356 | Date: May 10, 2019
+Mike Ferdman is hands down one of the best professors I have had the pleasure of taking a class with. Cloud computing is probably one of the most important courses I've taken here, despite it being an elective.
+
+Quality: 5.0 | Difficulty: 5.0 | Course: CSE356 | Date: Feb 4, 2019 | Grade: B+
+No hand holding here! You will learn a lot. Cloud computing was one of the toughest and most rewarding classes. You will learn cloud architectural design concepts and get to build a system of your own using technologies industries use.
+
+Quality: 5.0 | Difficulty: 5.0 | Course: CSE356 | Date: Jun 9, 2018 | Grade: A-
+There really ought to be more classes like this one at SBU. The amount of relevance of this class with the tech industry is unbelievable. Great class if you want a focus on projects rather than tests. Be ready to pay attention in lectures.
+
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE506 | Date: Feb 8, 2018 | Grade: A
+A rockstar professor. His lectures are charming and educative at the same time. He is always active on Piazza and is very knowledgeable.
+
+Quality: 5.0 | Difficulty: 5.0 | Course: CSE506 | Date: Jan 22, 2018 | Grade: A-
+He is an amazing professor. His CSE506 is one of the toughest in SBU, but you will feel it was worth it after completing the course.
+
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE506 | Date: Jan 1, 2018
+Operating Systems under Prof. Mike Ferdman is the best course offered at SBU. Best way to learn OS is by building it and Prof. Mike's focus is on that only.
+
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE502 | Date: May 21, 2017 | Grade: A
+If you are interested in Systems, Computer Architecture under Mike is a must-take course. Professor is accessible and replies to emails within minutes. One of the best and hardest course projects — we built a RISC-V processor. Don't take this with other hard courses.
+
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE356 | Date: May 19, 2017 | Grade: A-
+Easily the most relevant CS course offered at Stony Brook. Everything you could ever want to know about scalable cloud-based systems, Prof. Ferdman has right at his fingertips. Course projects and HWs were difficult but rewarding.
+
+Quality: 5.0 | Difficulty: 5.0 | Course: CSE356 | Date: May 10, 2017 | Grade: Not sure yet
+This course is hard and time-consuming but it is the most useful one. Prof. Ferdman is very experienced and skillful in Cloud Computing. Take it if you want to be more prepared for your future career.
+
+Quality: 5.0 | Difficulty: 5.0 | Course: CSE356 | Date: May 9, 2017 | Grade: A
+Professor Ferdman is a wizard when it comes to systems, architecture, and cloud computing. We went over so much and professor Ferdman even gave us access to use his own cloud as well as free AWS accounts! If you want to build a startup take this course.
+
+Quality: 5.0 | Difficulty: 3.0 | Course: CSE506 | Date: May 9, 2016 | Grade: A-
+Most amazing prof at Stony Brook. His classes are must-takes. Projects are super heavy and require substantial effort. But I can confidently say I owe a great deal to him — after his class, interviews will sound like cake.
+
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE391 | Date: Feb 27, 2016 | Grade: A
+CSE391 was cloud computing and easily one of the best classes I've taken. Ferdman's teaching style is amazing and he knows how to keep you interested. He answers emails within minutes, even at 2am. His assignments are very difficult and open ended.
+
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE391 | Date: Jan 21, 2016 | Grade: B+
+Ferdman is the smartest professor I've had at Stony Brook. His lectures are clear and interesting. He's available basically 24/7 on Piazza. His assignments are incredibly difficult and require lots of self-learning, but you will learn so much. I'm certain that without his class I wouldn't have the opportunities I do today.
+
+Quality: 5.0 | Difficulty: 1.0 | Course: CSE506 | Date: Sep 3, 2015 | Grade: A-
+If you are interested in the core systems side then his CSE506 and CSE502 are must-takes at SBU. You will learn everything by doing the course project which is mandatory and really tough, and will thank him for the rest of your life for what you learned.
+
+Quality: 5.0 | Difficulty: 5.0 | Course: CSE506 | Date: Aug 21, 2015 | Grade: A-
+Mike Ferdman is the most amazing prof I have seen in my life. He will make you learn and understand Operating Systems.
+
+Quality: 5.0 | Difficulty: 1.0 | Course: CSE506 | Date: May 22, 2015
+Prof Ferdman is the best prof in Stony Brook. His course is tough but you learn more from him than anyone else. He is always available in office hours and this is one of the few courses that values hard work.
+
+Quality: 5.0 | Difficulty: 2.0 | Course: CSE502 | Date: Apr 26, 2014
+He is a great professor and really knows how to teach. His course project is very open-ended and challenging, but because of that I think I understood the concepts very well.
+
+Quality: 5.0 | Difficulty: 1.0 | Course: CSE506 | Date: Mar 27, 2014 | Grade: B+
+One of the best professors at Stony Brook. If you really want to learn OS, go for his class. He's very helpful and readily available for help.
+
+Quality: 3.0 | Difficulty: 3.0 | Course: CSE506 | Date: Dec 1, 2013 | Grade: Incomplete
+I feel that his teaching isn't easy to follow. He tends to rush through concepts which are difficult but spend more time on the easier ones. He teaches from slides and doesn't use the blackboard much.
+
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE502 | Date: Jun 12, 2013
+His grading policy is not standard but he makes it clear at the beginning of the semester. I really liked the way the course was taught and the selection of material was current and relevant. His slides are great and lectures are crisp.

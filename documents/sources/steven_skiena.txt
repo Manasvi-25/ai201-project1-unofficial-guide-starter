@@ -1,0 +1,55 @@
+SOURCE: https://www.ratemyprofessors.com/professor/394782
+
+Professor: Steven Skiena
+Department: Computer Science, Stony Brook University
+Overall Quality: 4.3/5 | Difficulty: 3.3/5 | Would Take Again: 64%
+
+---
+
+Quality: 1.0 | Difficulty: 5.0 | Course: CSE519 | Date: Nov 28, 2023 | Grade: Not sure yet
+People kept talking about how great this guy is, but I can't seem to see it. He's consistently made mistakes in lectures, given poor assignments, and is all around unhelpful. Don't take his class if you don't know the material, you will be misled.
+
+Quality: 5.0 | Difficulty: 3.0 | Course: CSE373 | Date: Jan 20, 2023 | Grade: Audit
+Wanted to take CSE373 with him so bad but didn't get a chance, just watched all his lectures on YouTube. Taught me Algorithms and Data Structures, wrote the Algorithm Design Manual, just an overall legend. My favorite professor of all time.
+
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE373 | Date: Dec 26, 2021 | Grade: A-
+Pretty good professor, had a lot of fun learning in this class. Material can be challenging.
+
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE373 | Date: Nov 1, 2021 | Grade: A-
+Great professor, has informative lectures on interesting course material. The textbook is very helpful for preparing for exams and homeworks. The professor curves well and is fair with grading. Highly recommend!
+
+Quality: 4.0 | Difficulty: 5.0 | Course: CSE373 | Date: Dec 15, 2020 | Grade: Not sure yet
+He cares about the students. The median in the class is B and the average grade on his midterm is 60 or less. This class is really tough. Be prepared for what he is teaching.
+
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE519 | Date: Dec 22, 2018 | Grade: Not sure yet
+The lectures are awesome and he assigns grades quite generously. But be aware, if you know little about machine learning beforehand, you will spend substantial amounts of time on HW and project.
+
+Quality: 2.0 | Difficulty: 3.0 | Course: CSE519 | Date: Dec 12, 2018 | Grade: Not sure yet
+Everything is just a little bit so don't expect much from lectures to make you good at data science. During the final exam, when I saw something unclear in the questions, the professor just said "Read the Question" and ignored me. Very rude.
+
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE519 | Date: Jan 23, 2018 | Grade: A-
+He is good at teaching and explains things well. The slides are very accessible and you can find a lot of useful information on his course website. The homework and project are not easy, but you will learn a lot if you do them seriously.
+
+Quality: 2.0 | Difficulty: 5.0 | Course: CSE519 | Date: Jan 15, 2018 | Grade: B+
+He teaches very well but it is impossible to talk with him in person. He forgets what he says and doesn't understand your work. The project has high impact on the final score, so be careful in choosing your project topic.
+
+Quality: 5.0 | Difficulty: 5.0 | Course: CSE373 | Date: Dec 20, 2017 | Grade: B-
+Really interesting prof, and this course is really hard. If you want a better GPA, be careful about choosing his CSE373.
+
+Quality: 5.0 | Difficulty: 2.0 | Course: CSE519 | Date: Dec 15, 2017 | Grade: A
+People line up for Skiena's class for a reason. His talks are always funny, and not only is he a great and humorous lecturer but also a very nice and caring person. His class is definitely the best.
+
+Quality: 4.0 | Difficulty: 3.0 | Course: CSE373 | Date: Jun 4, 2014
+I don't think the material in 373 could be made easy especially the second half, but Skiena makes it much more interesting! Just read the textbook, do the HW problems, and complete as many exercise problems as you can before the exams and you should do fine.
+
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE373 | Date: Dec 5, 2013 | Grade: A-
+Definitely not an easy class. Skiena provides the best explanations there is for algorithms. You will learn the concepts very quickly. The midterms were very tough but related to his textbook questions. You should take 373 with Skiena!
+
+Quality: 2.0 | Difficulty: 5.0 | Course: CSE373 | Date: Apr 22, 2011
+This is the hardest class I ever took beside PHY132. Textbook is useless to study from and lectures are horrible. You either get the material or you don't.
+
+Quality: 4.0 | Difficulty: 5.0 | Course: CSE373 | Date: Jul 20, 2010
+Great professor, very funny and enthusiastic. Makes learning algorithms fun. The class is quite difficult but Skiena makes it much easier to understand — best professor to take Algorithms with.
+
+Quality: 5.0 | Difficulty: 3.0 | Course: CSE373 | Date: May 24, 2010
+Best professor for Algorithms. He explains things really clearly. He is funny, nice, and smart. The materials and the textbook are extremely useful.

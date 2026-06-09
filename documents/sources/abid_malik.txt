@@ -1,0 +1,65 @@
+SOURCE: https://www.ratemyprofessors.com/professor/2968856
+Professor: Abid Malik
+Department: Computer Science, Stony Brook University
+Overall Quality: 2.8/5 | Difficulty: 3.4/5 | Would Take Again: 43%
+
+Quality: 1.0 | Difficulty: 4.0 | Course: CSE-220 | Date: Jan 3, 2026 | Grade: A
+I love systems programming but bro made it horrendous. Very boring lectures and was often very rude to students. I don't understand the groups that say he gets too much hate.
+Quality: 5.0 | Difficulty: 3.0 | Course: CSE-220 | Date: Dec 21, 2025 | Grade: A
+Abid Malik was a solid lecturer with very fair exams. His exam questions resembled the problems showcased on his practices, and his slideshows covered all the necessary content needed. Due to the fairness of his exams and the abundance of his exam prep resources, achieving an A is very possible, but the material will take some time to grasp.
+Quality: 2.0 | Difficulty: 5.0 | Course: CSE-220 | Date: Dec 18, 2025 | Grade: Not sure yet
+8 projects, 3 midterms and 1 final. I spent almost 20 hours per week for this course. Midterms are MCQs, but the final was like hand-written coding for small projects in 2h by C and MIPS. I felt so bad because I did learn but no gain.
+Quality: 1.0 | Difficulty: 3.0 | Course: CSE-220 | Date: Dec 2, 2025 | Grade: Not sure yet
+Evil professor. 3 midterms, one 4 weeks in, one of them 2 days after thanksgiving break. Nobody I know except for CS majors have to go through this, so I have no clue why he is still scheduling midterms in december, a week before the last class.
+Quality: 1.0 | Difficulty: 4.0 | Course: CSE-220 | Date: Dec 2, 2025 | Grade: Incomplete
+Everything that he was warned about is true. This guy cannot teach even if his life depended on it and does not even try to care for his students.
+Quality: 4.0 | Difficulty: 3.0 | Course: CSE-220 | Date: Nov 3, 2025 | Grade: A-
+Very fair professor. Course was fairly hard but if you work hard you can get B+ or higher. Exams can be tricky.
+Quality: 1.0 | Difficulty: 3.0 | Course: CSE-337 | Date: Dec 16, 2024 | Grade: A
+Spends a month on basic Python, a month on Ruby, and then rushes Bash, AWK, SED, Python Neural Networks, and SQLite all in less than 1 month. The homeworks are filled with errors by the TAs/Malik but they aren't hard. The midterms were also not that hard at all. However, the final exam has so much material and slides on it.
+Quality: 5.0 | Difficulty: 1.0 | Course: CSE-220 | Date: Aug 21, 2024
+Malik was goated. Extra credit available. Clear grading criteria.
+Quality: 5.0 | Difficulty: 2.0 | Course: CSE-220 | Date: Aug 17, 2024 | Online: Yes
+Stern but fair.
+Quality: 5.0 | Difficulty: 3.0 | Course: CSE-220 | Date: Aug 17, 2024 | Online: Yes
+Just finished the final yesterday. It was 50/50 easy/hard difficulty although some questions were confusing. I think he really did try to teach this. Posted lecture recordings too.
+Quality: 4.0 | Difficulty: 3.0 | Course: CSE-220 | Date: Aug 17, 2024 | Grade: Audit
+Pretty charismatic and interesting guy.
+Quality: 5.0 | Difficulty: 2.0 | Course: CSE-220 | Date: Aug 14, 2024 | Grade: Rather not say
+Not as bad as everyone puts him to be. Clear grading criteria, lots of homework.
+Quality: 5.0 | Difficulty: 4.0 | Course: CSE-220 | Date: Aug 13, 2024 | Grade: Not sure yet
+I don't get all the hate. He's very very fair, just a bit straightforward and is kinda funny at times. Homeworks prepare you well but have hidden test cases so make sure you don't make silly mistakes. Overall great professor.
+Quality: 5.0 | Difficulty: 3.0 | Course: CSE-220 | Date: Jul 23, 2024 | Online: Yes
+Amazing lectures! Very entertaining and hands on (uses white board). Always stops to ask us if we have questions. Honestly he is such a great professor considering he is very new.
+Quality: 1.0 | Difficulty: 4.0 | Course: CSE-337 | Date: May 13, 2024 | Grade: Not sure yet
+Lectures are very boring, exams were different than practice exams, does not respond to emails. I know this is known to be an easy CS elective, but this class was torture with him.
+Quality: 3.0 | Difficulty: 5.0 | Course: CSE-337 | Date: Feb 22, 2024 | Grade: B-
+The course covered much more content than other teachers, including Python, various Python libraries, lambda functions, Ruby, Shell scripting, awk, sed programming, GUI, and pytest.
+Quality: 3.0 | Difficulty: 3.0 | Course: CSE-337 | Date: Dec 22, 2023 | Grade: A
+Topic was interesting.
+Quality: 5.0 | Difficulty: 1.0 | Course: CSE-337 | Date: Dec 21, 2023 | Grade: A
+Amazing professor. Always responds to emails and piazza. Make sure to enroll in this class before it gets filled.
+Quality: 5.0 | Difficulty: 5.0 | Course: CSE-337 | Date: Dec 21, 2023 | Grade: C
+Great curve.
+Quality: 1.0 | Difficulty: 5.0 | Course: CSE-220 | Date: Dec 21, 2023 | Grade: F
+Needed this class for credit, I was scared of failing and went to him, he said I would be fine but failed me. Homework is disorganized, barely responds to emails or piazza, and exams have nothing to do with review.
+Quality: 1.0 | Difficulty: 4.0 | Course: CSE-220 | Date: Dec 21, 2023 | Grade: F
+Poor lecturing. Homework kept being updated within hours of posting because he didn't check his errors. Exams had nothing to do with the review he provided and he barely replied to emails or piazza.
+Quality: 1.0 | Difficulty: 5.0 | Course: CSE-220 | Date: Dec 20, 2023 | Grade: C
+He's clearly not equipped to be teaching a class like this. Gives awful lectures where he just reads off slides that aren't his. Overall grades were bad with no curve at all. Barely responds to email or piazza.
+Quality: 2.0 | Difficulty: 4.0 | Course: CSE-337 | Date: Dec 20, 2023 | Grade: Not sure yet
+The only positive thing I can say is that I do not believe that the poor quality of his teaching is intentional.
+Quality: 1.0 | Difficulty: 3.0 | Course: CSE-220 | Date: Dec 20, 2023 | Grade: B
+Homeworks full of mistakes and ambiguity, awful practice exams, tests asked about obscure details, bland lectures, many empty slides posted, terrible piazza answers. Low averages on tests, but no curve. Avoid this professor at all costs.
+Quality: 1.0 | Difficulty: 3.0 | Course: CSE-337 | Date: Dec 20, 2023 | Grade: Not sure yet
+Do not take this course with him! Lectures are read word for word from the slides. The tests are unfair and mainly test on weird quirks of scripting languages.
+Quality: 1.0 | Difficulty: 3.0 | Course: CSE-337 | Date: Dec 20, 2023 | Grade: A-
+Just bad.
+Quality: 4.0 | Difficulty: 3.0 | Course: CSE-220 | Date: Dec 20, 2023 | Grade: A-
+Goat, but homework docs could be better written. Lots of homework but hilarious and accessible outside class.
+Quality: 1.0 | Difficulty: 3.0 | Course: CSE-220 | Date: Dec 19, 2023 | Grade: Not sure yet
+Malik never answers emails, ambiguous hw assignments that are constantly updated up until the deadline, and the practice material is NEVER related to the real exam.
+Quality: 4.0 | Difficulty: 3.0 | Course: CSE-220 | Date: Dec 19, 2023 | Grade: Not sure yet
+The professor is very approachable and dedicates time to clarifying students' doubts during office hours. However, preparing for his exams proved challenging — practice exam was entirely focused on performance and data path questions but the final had very few of those.
+Quality: 1.0 | Difficulty: 3.0 | Course: CSE-220 | Date: Dec 19, 2023 | Grade: B+
+Lecture slides are copy pasted from textbook. Misleading study materials that ended up being only 20% of the exam. Doesn't read Piazza posts carefully. HWs are good learning practice. Gave high curve because everyone was failing.
