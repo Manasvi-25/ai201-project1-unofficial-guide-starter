@@ -10,6 +10,11 @@
 ## Domain
 
 <!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
+I chose the domain of rating of cse professors in sbu. this is valuable because students need to amke decisions on which clas to take with which professor and its very I chose the domain of SBU CSE professor ratings and reviews. This is useful because students are constantly trying to figure out which classes to take and which professors to take them with, especially in the CSE department where workload, teaching style, and grading can vary a lot from one professor to another. These choices can genuinely affect how manageable a semester feels, so having good information matters.
+
+Right now, this process is pretty scattered and annoying to do manually. You usually end up jumping between RateMyProfessor, Reddit threads, Discord chats, and random student reviews just to get a basic idea of what a professor is like. Even then, the information is often incomplete, outdated, or super subjective, so it takes a lot of effort to piece together something reliable.
+
+Using this project, instead of spending a long time digging through different sources, you can have a system where you can just look up a professor and immediately get a clear summary of student experiences, common themes, and overall sentiment.
 
 ---
 
@@ -20,16 +25,16 @@
 
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | Abid Malik | RMP reviews for CSE220 (Systems Fundamentals) and CSE337 (Scripting Languages) | https://www.ratemyprofessors.com/professor/2968856 — `docs/abid_malik.txt` |
+| 2 | Ahmad Esmaili | RMP reviews for CSE214 (Data Structures) and CSE114 (Intro to OOP) | https://www.ratemyprofessors.com/professor/86020 — `docs/ahmed_esmaili.txt` |
+| 3 | Christopher Kane | RMP reviews for CSE215 (Logic), CSE216/316 (Functional/Full Stack), CSE310 (Networks) | https://www.ratemyprofessors.com/professor/2515527 — `docs/christopher_kane.txt` |
+| 4 | Eugene Stark | RMP reviews for CSE320 (Systems Fundamentals) and CSE306 (Operating Systems) | https://www.ratemyprofessors.com/professor/926577 — `docs/eugene_stark.txt` |
+| 5 | Jalaa Hoblos | RMP reviews for CSE101, CSE114 (Intro to OOP), CSE310 (Networks) | https://www.ratemyprofessors.com/professor/2826272 — `docs/jalaa_hoblos.txt` |
+| 6 | Michael Ferdman | RMP reviews for CSE356 (Cloud Computing), CSE506 (OS), CSE502 (Computer Architecture) | https://www.ratemyprofessors.com/professor/1825086 — `docs/michael_ferdman.txt` |
+| 7 | Paul Fodor | RMP reviews for CSE114 (Intro to OOP), CSE215 (Logic), CSE316 (Full Stack) | https://www.ratemyprofessors.com/professor/1614881 — `docs/paul_fodor.txt` |
+| 8 | Pramod Ganapathi | RMP reviews for CSE215 (Discrete Math) and CSE113 | https://www.ratemyprofessors.com/professor/2519551 — `docs/pramod_ganapathi.txt` |
+| 9 | Steven Skiena | RMP reviews for CSE373 (Analysis of Algorithms) and CSE519 (Data Science) | https://www.ratemyprofessors.com/professor/394782 — `docs/steven_skiena.txt` |
+| 10 | Yifan Sun | RMP reviews for CSE353 (ML), CSE512 (ML Theory), CSE519 (Data Science) | https://www.ratemyprofessors.com/professor/2605339 — `docs/yifan_sun.txt` |
 
 ---
 
@@ -40,11 +45,19 @@
      numbers fit the structure of your documents.
      A review-heavy corpus warrants different chunking than a long FAQ. -->
 
-**Chunk size:**
+**Chunk size:** split by blank line (one review per chunk)
 
-**Overlap:**
+**Overlap:** none needed
 
-**Reasoning:**
+**Reasoning:** I originally planned 500 char chunks with 50 char overlap, but after 
+running the pipeline I switched to splitting on blank lines instead. Each review in 
+my docs is already naturally separated by a blank line, so splitting by blank line 
+gives exactly one complete review per chunk. This is better than fixed character 
+splitting because reviews are self-contained units — a student's full opinion about 
+one professor in one course. The old approach was cutting reviews mid-sentence which 
+made chunks meaningless. Any chunk shorter than 50 chars is filtered out to remove 
+header lines. Final result: 238 chunks across 10 documents, each one a readable, 
+complete review.
 
 ---
 
@@ -56,11 +69,13 @@
      would you weigh in choosing a different embedding model — context length, multilingual
      support, accuracy on domain-specific text, latency? -->
 
-**Embedding model:**
+**Embedding model:** all-MiniLM-L6-v2 via sentence-transformers
 
-**Top-k:**
+**Top-k:** 4
 
-**Production tradeoff reflection:**
+**Production tradeoff reflection:** 
+
+all-MiniLM-L6-v2 is what I’m using for this since it runs locally, is fast, and doesn’t cost anything per request, which makes it a practical choice for this project. But if this were a real deployment, I’d consider a few tradeoffs. For accuracy, OpenAI’s text-embedding-3-small handles nuanced opinion text better, but it comes with per-request API costs. For context length, MiniLM only supports around 256 tokens, which is fine for short student reviews, but it could truncate longer inputs if we scale up. Latency is actually a plus for local models like MiniLM since there’s no network call, so queries stay quick even with multiple users. Multilingual support isn’t needed here since everything is in English, but it would matter if the system expanded to a more diverse student base later.
 
 ---
 
@@ -73,11 +88,11 @@
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 | How time consuming is CSE214 with Esmaili? | Very time consuming — 7 homeworks due every other week described as mini-projects, pop quizzes require attendance, exams are hard but curved heavily |
+| 2 | Which professor should I take for CSE316? | Kane or Fodor — Kane is described as the GOAT for 316, passionate and accessible; Fodor taught it and students found it easy with fair assignments |
+| 3 | Is Ganapathi a hard professor? | Yes — one of the hardest in the department, exams cover surprise material not in lectures, only 1/3 of CSE215 students get above C+, overwhelming majority of reviews warn to avoid |
+| 4 | Who is a good data science professor? | Skiena — highly rated for CSE519, described as legendary, funny, and a great lecturer; wrote the Algorithm Design Manual; though CSE373 is difficult |
+| 5 | Who is the best professor for CSE114? | Fodor — called "the GOAT" in dozens of reviews, records lectures, gives extra credit, very caring; Esmaili is also decent but stricter; Hoblos is widely warned against |
 
 ---
 
@@ -87,9 +102,11 @@
      Consider: noisy or inconsistent documents, missing source attribution, off-topic
      retrieval, chunks that split key information across boundaries. -->
 
-1.
+1. Bias in reviews: RateMyProfessors is naturally biased because people with strong feelings are way more likely to leave reviews. So you mostly get extremes — really happy or really angry students — while neutral experiences rarely show up. That means the data doesn’t always reflect the “average” classroom experience.
 
-2.
+2. Outdated course info: Some reviews might be for professors teaching courses they don’t actually teach anymore. Like a 2019 review saying Stark taught CSE320 might not match what’s happening now, which could mess with course planning.
+
+3. Conflicting opinions: Some professors have super split feedback (like half love them, half hate them). In those cases, the system might end up blending everything into a vague summary instead of clearly showing that people actually disagree a lot, which is important info on its own.
 
 ---
 
@@ -100,6 +117,28 @@
      Label each stage with the tool or library you're using.
      You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
      You'll use this diagram as context when prompting AI tools to implement each stage. -->
+
+     [.txt files in /docs]
+        ↓
+   ingest.py
+   (load + clean)
+        ↓
+   chunk_text()
+   (size=500, overlap=50)
+        ↓
+   embed.py
+   (all-MiniLM-L6-v2)
+        ↓
+   ChromaDB
+   (vector store)
+        ↓
+   query.py
+   (top-4 retrieval)
+        ↓
+   Groq llama-3.3-70b
+   (answer + sources)
+        ↓
+   app.py (Gradio UI)
 
 ---
 
@@ -115,7 +154,32 @@
      "I'll give Claude my Chunking Strategy section and ask it to implement chunk_text()
      with my specified chunk size and overlap" is a plan. -->
 
+1. **ingest.py + chunking** — using Claude
+   - give it: Documents table + Chunking Strategy section
+   - want: script that loads all .txt from /docs, splits into 500 char chunks with 50 overlap, attaches filename as metadata
+   - verify: print 5 chunks and make sure each one has professor name + course in it
+
+2. **embed.py** — using Claude
+   - give it: Retrieval Approach section + architecture diagram
+   - want: script that embeds chunks with all-MiniLM-L6-v2 and stores in ChromaDB
+   - verify: query ChromaDB manually and check source metadata comes back correctly
+
+3. **query.py** — using Claude
+   - give it: Retrieval Approach + my 5 eval questions
+   - want: function that retrieves top-4 chunks and sends to Groq with grounding prompt, returns answer + sources
+   - verify: run eval questions and make sure answers reference actual doc content not hallucinations
+
+4. **app.py** — using Claude
+   - give it: query.py output format + Gradio requirements
+   - want: simple Gradio UI with question input, answer box, sources box
+   - verify: run locally and test all 5 eval questions work
+
 **Milestone 3 — Ingestion and chunking:**
+Ran ingest.py on all 10 documents in documents/sources/.
+Output:
+Loaded 10 documents
+Total chunks: 238
+Sample chunks verified, each chunk is one complete student review with professor name, course number, date, and opinion. No fragments, no HTML artifacts, no empty strings. Switched from fixed 500-char chunking to blank-line splitting since reviews are naturally separated, this gave cleaner, self-contained chunks.
 
 **Milestone 4 — Embedding and retrieval:**
 
