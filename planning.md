@@ -118,19 +118,14 @@ all-MiniLM-L6-v2 is what I’m using for this since it runs locally, is fast, an
 
 ## Architecture
 
-<!-- Draw a diagram of your pipeline showing the five stages:
-     Document Ingestion → Chunking → Embedding + Vector Store → Retrieval → Generation
-     Label each stage with the tool or library you're using.
-     You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
-     You'll use this diagram as context when prompting AI tools to implement each stage. -->
-
-     [.txt files in /docs]
+```
+[.txt files in documents/sources]
         ↓
    ingest.py
    (load + clean)
         ↓
    chunk_text()
-   (size=500, overlap=50)
+   (split by blank line, prepend professor name)
         ↓
    embed.py
    (all-MiniLM-L6-v2)
@@ -139,13 +134,13 @@ all-MiniLM-L6-v2 is what I’m using for this since it runs locally, is fast, an
    (vector store)
         ↓
    query.py
-   (top-4 retrieval)
+   (top-10 retrieval + keyword pre-filter)
         ↓
    Groq llama-3.3-70b
    (answer + sources)
         ↓
    app.py (Gradio UI)
-
+```
 ---
 
 ## AI Tool Plan
@@ -162,7 +157,7 @@ all-MiniLM-L6-v2 is what I’m using for this since it runs locally, is fast, an
 
 1. **ingest.py + chunking** — using Claude
    - give it: Documents table + Chunking Strategy section
-   - want: script that loads all .txt from /docs, splits into 500 char chunks with 50 overlap, attaches filename as metadata
+   - want: script that loads all .txt from /docs, splits by blank line, one review per chunk, prepends professor name.
    - verify: print 5 chunks and make sure each one has professor name + course in it
 
 2. **embed.py** — using Claude
