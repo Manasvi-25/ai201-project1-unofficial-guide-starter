@@ -56,8 +56,14 @@ gives exactly one complete review per chunk. This is better than fixed character
 splitting because reviews are self-contained units — a student's full opinion about 
 one professor in one course. The old approach was cutting reviews mid-sentence which 
 made chunks meaningless. Any chunk shorter than 50 chars is filtered out to remove 
-header lines. Final result: 238 chunks across 10 documents, each one a readable, 
+header lines.
+Each chunk is also prepended with the professor's name extracted from the filename so retrieval can correctly 
+associate reviews with professors when the name isn't mentioned in the review text itself.
+
+Final result: 238 chunks across 10 documents, each one a readable, 
 complete review.
+
+
 
 ---
 
@@ -71,7 +77,7 @@ complete review.
 
 **Embedding model:** all-MiniLM-L6-v2 via sentence-transformers
 
-**Top-k:** 4
+ **Top-k:** 10 for course-specific queries, 10 for general queries
 
 **Production tradeoff reflection:** 
 
@@ -86,14 +92,14 @@ all-MiniLM-L6-v2 is what I’m using for this since it runs locally, is fast, an
      is right or wrong. "What are good dining halls?" is too vague.
      "What do students say about wait times at [dining hall name] during lunch?" is testable. -->
 
+
 | # | Question | Expected answer |
 |---|----------|-----------------|
 | 1 | How time consuming is CSE214 with Esmaili? | Very time consuming — 7 homeworks due every other week described as mini-projects, pop quizzes require attendance, exams are hard but curved heavily |
 | 2 | Which professor should I take for CSE316? | Kane or Fodor — Kane is described as the GOAT for 316, passionate and accessible; Fodor taught it and students found it easy with fair assignments |
 | 3 | Is Ganapathi a hard professor? | Yes — one of the hardest in the department, exams cover surprise material not in lectures, only 1/3 of CSE215 students get above C+, overwhelming majority of reviews warn to avoid |
-| 4 | Who is a good data science professor? | Skiena — highly rated for CSE519, described as legendary, funny, and a great lecturer; wrote the Algorithm Design Manual; though CSE373 is difficult |
-| 5 | Who is the best professor for CSE114? | Fodor — called "the GOAT" in dozens of reviews, records lectures, gives extra credit, very caring; Esmaili is also decent but stricter; Hoblos is widely warned against |
-
+| 4 | Who teaches data science CSE519? | Skiena and Yifan Sun — Skiena is highly rated, legendary lecturer, wrote Algorithm Design Manual; Sun is newer with fewer reviews but generally positive |
+| 5 | Who teaches CS114 and are they good? | Fodor is the most recommended — called the GOAT in dozens of reviews, records lectures, gives extra credit; Hoblos is widely warned against; Esmaili is mixed |
 ---
 
 ## Anticipated Challenges
@@ -183,4 +189,17 @@ Sample chunks verified, each chunk is one complete student review with professor
 
 **Milestone 4 — Embedding and retrieval:**
 
+Ran embed.py to embed all 238 chunks using all-MiniLM-L6-v2 and store in ChromaDB.
+Tested retrieval with 3 eval queries. Ganapathi and Esmaili queries returned relevant 
+chunks with distances below 0.9. CSE114 query had weak retrieval initially — fixed by 
+adding keyword pre-filter for course numbers so queries like "Who teaches CSE114" 
+directly filter chunks containing that course number instead of relying purely on 
+semantic similarity.
+
 **Milestone 5 — Generation and interface:**
+
+Built query.py with Groq llama-3.3-70b-versatile. Grounding enforced via system prompt 
+that explicitly restricts answers to retrieved context only. Out-of-scope test ("What 
+is the weather in Paris?") correctly returned "I don't have enough information on that."
+Built Gradio UI in app.py — runs at localhost:7860 with question input, answer box, 
+and sources box. All 5 eval questions return grounded answers with source attribution.
