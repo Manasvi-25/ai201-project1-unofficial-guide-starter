@@ -45,11 +45,19 @@ Using this project, instead of spending a long time digging through different so
      numbers fit the structure of your documents.
      A review-heavy corpus warrants different chunking than a long FAQ. -->
 
-**Chunk size:**
+**Chunk size:** 500
 
-**Overlap:**
+**Overlap:** 50
 
-**Reasoning:**
+**Reasoning:** I’m using chunk size = 500 and overlap = 50. Each review is usually 2–5 sentences (~200–400 chars), so 500 chars fits one full review plus its metadata like course, professor, difficulty, etc. 
+
+I didn’t go smaller because then you lose context, something like “exams are hard” without course/professor info becomes useless and just matches everything. I didn’t go bigger either because mixing multiple reviews in one chunk makes embeddings messy and less precise since different opinions get blended together.
+
+Overlap = 50 is just a small safety buffer since reviews are already separated cleanly, so we don’t really need a heavy overlap.
+
+Semantic search works well here because users don’t use the exact words from reviews. Like someone might say “brutal” but reviews say “very difficult” or “tons of workload” — embeddings still connect those.
+
+Top-k = 4 because each chunk is one review, so 4 reviews is enough to get a balanced mix of opinions without dumping too much noise on the model.
 
 ---
 
@@ -61,11 +69,13 @@ Using this project, instead of spending a long time digging through different so
      would you weigh in choosing a different embedding model — context length, multilingual
      support, accuracy on domain-specific text, latency? -->
 
-**Embedding model:**
+**Embedding model:** all-MiniLM-L6-v2 via sentence-transformers
 
-**Top-k:**
+**Top-k:** 4
 
-**Production tradeoff reflection:**
+**Production tradeoff reflection:** 
+
+all-MiniLM-L6-v2 is what I’m using for this since it runs locally, is fast, and doesn’t cost anything per request, which makes it a practical choice for this project. But if this were a real deployment, I’d consider a few tradeoffs. For accuracy, OpenAI’s text-embedding-3-small handles nuanced opinion text better, but it comes with per-request API costs. For context length, MiniLM only supports around 256 tokens, which is fine for short student reviews, but it could truncate longer inputs if we scale up. Latency is actually a plus for local models like MiniLM since there’s no network call, so queries stay quick even with multiple users. Multilingual support isn’t needed here since everything is in English, but it would matter if the system expanded to a more diverse student base later.
 
 ---
 
@@ -78,11 +88,11 @@ Using this project, instead of spending a long time digging through different so
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 | How time consuming is CSE214 with Esmaili? | Very time consuming — 7 homeworks due every other week described as mini-projects, pop quizzes require attendance, exams are hard but curved heavily |
+| 2 | Which professor should I take for CSE316? | Kane or Fodor — Kane is described as the GOAT for 316, passionate and accessible; Fodor taught it and students found it easy with fair assignments |
+| 3 | Is Ganapathi a hard professor? | Yes — one of the hardest in the department, exams cover surprise material not in lectures, only 1/3 of CSE215 students get above C+, overwhelming majority of reviews warn to avoid |
+| 4 | Who is a good data science professor? | Skiena — highly rated for CSE519, described as legendary, funny, and a great lecturer; wrote the Algorithm Design Manual; though CSE373 is difficult |
+| 5 | Who is the best professor for CSE114? | Fodor — called "the GOAT" in dozens of reviews, records lectures, gives extra credit, very caring; Esmaili is also decent but stricter; Hoblos is widely warned against |
 
 ---
 
@@ -92,9 +102,11 @@ Using this project, instead of spending a long time digging through different so
      Consider: noisy or inconsistent documents, missing source attribution, off-topic
      retrieval, chunks that split key information across boundaries. -->
 
-1.
+1. Bias in reviews: RateMyProfessors is naturally biased because people with strong feelings are way more likely to leave reviews. So you mostly get extremes — really happy or really angry students — while neutral experiences rarely show up. That means the data doesn’t always reflect the “average” classroom experience.
 
-2.
+2. Outdated course info: Some reviews might be for professors teaching courses they don’t actually teach anymore. Like a 2019 review saying Stark taught CSE320 might not match what’s happening now, which could mess with course planning.
+
+3. Conflicting opinions: Some professors have super split feedback (like half love them, half hate them). In those cases, the system might end up blending everything into a vague summary instead of clearly showing that people actually disagree a lot, which is important info on its own.
 
 ---
 
@@ -105,6 +117,28 @@ Using this project, instead of spending a long time digging through different so
      Label each stage with the tool or library you're using.
      You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
      You'll use this diagram as context when prompting AI tools to implement each stage. -->
+
+     [.txt files in /docs]
+        ↓
+   ingest.py
+   (load + clean)
+        ↓
+   chunk_text()
+   (size=500, overlap=50)
+        ↓
+   embed.py
+   (all-MiniLM-L6-v2)
+        ↓
+   ChromaDB
+   (vector store)
+        ↓
+   query.py
+   (top-4 retrieval)
+        ↓
+   Groq llama-3.3-70b
+   (answer + sources)
+        ↓
+   app.py (Gradio UI)
 
 ---
 
@@ -119,6 +153,26 @@ Using this project, instead of spending a long time digging through different so
      "I'll use AI to help me code" is not a plan.
      "I'll give Claude my Chunking Strategy section and ask it to implement chunk_text()
      with my specified chunk size and overlap" is a plan. -->
+
+1. **ingest.py + chunking** — using Claude
+   - give it: Documents table + Chunking Strategy section
+   - want: script that loads all .txt from /docs, splits into 500 char chunks with 50 overlap, attaches filename as metadata
+   - verify: print 5 chunks and make sure each one has professor name + course in it
+
+2. **embed.py** — using Claude
+   - give it: Retrieval Approach section + architecture diagram
+   - want: script that embeds chunks with all-MiniLM-L6-v2 and stores in ChromaDB
+   - verify: query ChromaDB manually and check source metadata comes back correctly
+
+3. **query.py** — using Claude
+   - give it: Retrieval Approach + my 5 eval questions
+   - want: function that retrieves top-4 chunks and sends to Groq with grounding prompt, returns answer + sources
+   - verify: run eval questions and make sure answers reference actual doc content not hallucinations
+
+4. **app.py** — using Claude
+   - give it: query.py output format + Gradio requirements
+   - want: simple Gradio UI with question input, answer box, sources box
+   - verify: run locally and test all 5 eval questions work
 
 **Milestone 3 — Ingestion and chunking:**
 
